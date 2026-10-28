@@ -33,6 +33,8 @@ Build: Solidity 0.8.26, optimizer 200, Cancun, bytecode hash none, no via-IR or 
 
 Run `forge test` and SDK tests with `node --test sdk/steps-branch-v2.test.mjs` after installing the SDK's declared dependencies. `sdk/local-integration.mjs` only targets an isolated Anvil at 127.0.0.1:18765 / chain 31337 and uses unlocked disposable accounts; it does not load wallet files. It runs separate cold transactions to verify callback gas, independent branch ordering, late outcome isolation and snapshot storage.
 
+The committed ABI and compiler artifact are in `deployment/` (moved out of `artifacts/`, which can be the forge output directory and is wiped by a clean build). Reproduction results and the import-audit notes are in `evidence/LOCAL-REPRODUCTION.json` and `ADAPTATION.md`. Known property: branches are shared and permissionless, so any payer can occupy a branch's single pending slot. Contributors who need an uncontested line of work should `forkFromOrigin` or `fork` their own branch.
+
 See `evidence/LOCAL-VALIDATION.json` for this exact source. Local evidence is not an external audit, a live paid-product acceptance, or deployment proof. IMD must audit imported code, perform only necessary packaging, rerun tests and independently review final source before its service deploys. Any substantive defect must block deployment and be reported rather than silently expanding scope.
 
 Deliver the final immutable source, complete diff from input, constructor args, compiler settings, ABI/runtime hashes and immutable bindings, launch ID, contract address, deployment transaction/receipt, actual deployer/factory identity and official handoff. Keep unperformed checks NOT_RUN. All delivery documents must be English.

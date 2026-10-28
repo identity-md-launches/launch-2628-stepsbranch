@@ -1,0 +1,159 @@
+{
+  "scope": "LOCAL_ANVIL_ONLY",
+  "chainId": 31337,
+  "ledger": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+  "intake": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+  "token": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "observations": [
+    {
+      "label": "first cold callback",
+      "transactionHash": "0x66df698cbf63e054544e1b6575c85f4b2070039cc412edb385961f2697d81e72",
+      "blockNumber": "8",
+      "callGasIncludingMockOverhead": "154647",
+      "delivered": true,
+      "checkpointId": "0"
+    },
+    {
+      "label": "fork callback arrives before parent branch",
+      "transactionHash": "0xac1f5a13e23d267ec000049528f1d06b38457a77ab4249f0ba69c64e54f07f11",
+      "blockNumber": "14",
+      "callGasIncludingMockOverhead": "140637",
+      "delivered": true,
+      "checkpointId": "1"
+    },
+    {
+      "label": "source branch callback after fork",
+      "transactionHash": "0x49bc8b3d878a06122e94899987ea6684ef3882f942a0618435046d9aff6c0002",
+      "blockNumber": "15",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": "2"
+    },
+    {
+      "label": "2048-byte URI cold callback",
+      "transactionHash": "0x1e17320759b1af44bfcfa626033bf17bbccca7a5b700e1bb98a82bd703a4c567",
+      "blockNumber": "21",
+      "callGasIncludingMockOverhead": "158059",
+      "delivered": true,
+      "checkpointId": "3"
+    },
+    {
+      "label": "16384-byte URI cold callback",
+      "transactionHash": "0xa0da958ddaaaf6b3a1c4990ceb8c8d761ae0314ac817d49c7b9bad14a5147233",
+      "blockNumber": "24",
+      "callGasIncludingMockOverhead": "155409",
+      "delivered": true,
+      "checkpointId": "4"
+    },
+    {
+      "label": "first checkpoint, nonzero proposal, 2048-byte URI, cold transaction",
+      "transactionHash": "0x5f9e964972212b6d47bf5df98fa2d7748da1d92d50de509430da72b1cf141779",
+      "blockNumber": "31",
+      "callGasIncludingMockOverhead": "192259",
+      "delivered": true,
+      "checkpointId": "0"
+    },
+    {
+      "label": "late success: 78-byte URI, cold transaction",
+      "transactionHash": "0xd21aef3efc18389892e9ad943a5b3dfb03571bdbf3071a65bfe2e435821e7aa5",
+      "blockNumber": "38",
+      "callGasIncludingMockOverhead": "89503",
+      "delivered": true,
+      "checkpointId": null
+    },
+    {
+      "label": "new request settles after archived old success",
+      "transactionHash": "0xc605537304af63fe92e91ce74cad6879dc6e483ff81064d428808c4c23b53398",
+      "blockNumber": "39",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": "5"
+    },
+    {
+      "label": "late success: 2048-byte URI, cold transaction",
+      "transactionHash": "0x1dbc1f01fac030a802d2027007b124b7677c58503d8a359b9a0ec3ba916014e5",
+      "blockNumber": "46",
+      "callGasIncludingMockOverhead": "107208",
+      "delivered": true,
+      "checkpointId": null
+    },
+    {
+      "label": "new request settles after archived old success",
+      "transactionHash": "0xb9e9d90c6ef6ee2d2dd288200639dfdf652cd9d1ddda6358da09862b7ad444c7",
+      "blockNumber": "47",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": "6"
+    },
+    {
+      "label": "late success: 16384-byte URI, cold transaction",
+      "transactionHash": "0x6971c4344ee732c43ebe68ff0341c9eff1553e6444a02f53464b5ae18583e62e",
+      "blockNumber": "54",
+      "callGasIncludingMockOverhead": "104494",
+      "delivered": true,
+      "checkpointId": null
+    },
+    {
+      "label": "new request settles after archived old success",
+      "transactionHash": "0xa19c9bb38fe39e721e6ac5ccfaaca57191a19ff22c1be93ba8059373adf617a5",
+      "blockNumber": "55",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": "7"
+    },
+    {
+      "label": "late status 1, cold transaction",
+      "transactionHash": "0x82df41d4aacdff19fadb37005c648e91588d38016b942488d5968c24f8862564",
+      "blockNumber": "62",
+      "callGasIncludingMockOverhead": "65956",
+      "delivered": true,
+      "checkpointId": null
+    },
+    {
+      "label": "new request settles after archived old failure",
+      "transactionHash": "0x0964d590684afce70bb4e31038e7dba6df8ab6213c1e3fd38d40807fc518e105",
+      "blockNumber": "63",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": "8"
+    },
+    {
+      "label": "late status 2, cold transaction",
+      "transactionHash": "0xf06171419c8ea4df3857d8f7450f58b56ea5e12f981c65bd8f5db96e63d2f132",
+      "blockNumber": "70",
+      "callGasIncludingMockOverhead": "65976",
+      "delivered": true,
+      "checkpointId": null
+    },
+    {
+      "label": "new request settles after archived old failure",
+      "transactionHash": "0x343a02eb38c8841a2c937b3744ff3fcf4df96bd13599147ef35fb7d0db68e4bd",
+      "blockNumber": "71",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": "9"
+    },
+    {
+      "label": "4 KiB result commitment, cold transaction",
+      "transactionHash": "0x2a0ac2572d057ec081fdd1142090c3cb43f5dec7d68194ee2cb5d673a374095b",
+      "blockNumber": "74",
+      "callGasIncludingMockOverhead": "140347",
+      "delivered": true,
+      "checkpointId": null
+    }
+  ],
+  "checks": [
+    "SDK propose and bounded fund",
+    "nested ERC20 payment",
+    "cold transaction callbacks with 200000 gas",
+    "source/fork independent reverse completion",
+    "failure preserves head and unlocks branch",
+    "authenticated result snapshot copy",
+    "no residual ledger balance or Intake approval",
+    "permissionless expiry is separate from service failure",
+    "late success/refusal/no-result preserved without changing active branch",
+    "4 KiB nonzero snapshot persisted and read back"
+  ],
+  "snapshotCopyGas": "3021993",
+  "mainnetAcceptance": false
+}

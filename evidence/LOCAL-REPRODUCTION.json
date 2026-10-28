@@ -1,0 +1,67 @@
+{
+  "scope": "LOCAL_ONLY_NOT_DEPLOYED",
+  "date": "2026-10-28",
+  "importedCommit": "3962d42",
+  "sourceSha256": "6451f1c4b42fdee696f10383caa411e1e3017438d43047607ce4b124ad5ec1a7",
+  "sourceChangedFromImport": false,
+  "compiler": {
+    "solc": "0.8.26",
+    "optimizer": true,
+    "optimizerRuns": 200,
+    "evmVersion": "cancun",
+    "bytecodeHash": "none",
+    "viaIR": false,
+    "linkedLibraries": 0
+  },
+  "contract": "StepsBranch",
+  "constructorArgs": [
+    "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+    "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "500000000000000000",
+    "$owner = 0x0bced6bf6f6db1d7ac5bc0b540482d170a027352"
+  ],
+  "constructorArgsAbiEncoded": "0x000000000000000000000000a43e6f75ee006411f79ac1c84120606c2330de82000000000000000000000000d34a99bc0f67ae1bbd63c660e6d0b0dd03e263b700000000000000000000000000000000000000000000000006f05b59d3b200000000000000000000000000000bced6bf6f6db1d7ac5bc0b540482d170a027352",
+  "initCodeKeccak256WithoutArgs": "0xba96d3cb8697a78d8826d2dbd45d00d56e083bb336e9e9813991c20be24f7667",
+  "initCodeBytesWithoutArgs": 12063,
+  "compiledRuntimeKeccak256": "0x302f48c8f13f09db43b3412bcc071ba6d01d2199db91b9b67896842f77943fbd",
+  "compiledRuntimeNote": "Hash of the compiled runtime with immutable slots zeroed. The deployed runtime embeds intake and asset at the immutableReferences offsets listed in deployment/StepsBranch.artifact.json.",
+  "runtimeBytes": 11460,
+  "abiSha256": "10e8ad071e0b79a19ba9ec54af25b24079465d5a31f7342368022b2ac22778f8",
+  "reproduced": {
+    "forgeSuppliedTests": "57 passed, 0 failed",
+    "forgeAddedAuditTests": "2 passed, 0 failed",
+    "fuzz": "testFuzzSiblingCompletionOrder 256 runs, FOUNDRY_FUZZ_SEED=0x5a23f447b929a78f45b403ca4173b345b3f4fb4c8374df970311bf3091a512d2",
+    "sdkTests": "16 passed, 0 failed (viem 2.57.7, node v24)",
+    "coldCallbackTransactions": 17,
+    "coldCallbacksDelivered": 17,
+    "maxCallGasIncludingMockOverhead": 192259,
+    "maxCase": "first checkpoint, nonzero proposal, 2048-byte URI, cold transaction",
+    "snapshotCopyGas": "3021993",
+    "integrationOutput": "evidence/LOCAL-INTEGRATION-REPRODUCED.json",
+    "floorRehearsal": "CREATE2 deployment of init code plus manifest args with chainId 1 and no code at intake/asset: constructor succeeds, owner = 0x0bced6bf6f6db1d7ac5bc0b540482d170a027352 (not factory, not tx.origin), runtime 11460 <= 24576 bytes, no reachable DELEGATECALL/CALLCODE/SELFDESTRUCT",
+    "forceBuildLeavesTreeClean": true
+  },
+  "liveReadOnlyChecksChainId1": {
+    "intakeHasCode": true,
+    "intakeExposesRequestWithFailure": "0x9a78c321 present in runtime",
+    "intakePriceOfJobOpenInImd": "500000000000000000",
+    "intakeCallbackGas": "200000",
+    "assetSymbol": "IMD",
+    "assetDecimals": 18,
+    "ownerHasCode": false
+  },
+  "deployment": {
+    "launchId": "NOT_AVAILABLE",
+    "contractAddress": "NOT_AVAILABLE",
+    "deploymentTransaction": "NOT_AVAILABLE",
+    "receiptBlock": "NOT_AVAILABLE",
+    "outerSender": "NOT_AVAILABLE",
+    "contractCreationCaller": "NOT_AVAILABLE",
+    "readbacks": "NOT_RUN",
+    "officialHandoff": "NOT_AVAILABLE"
+  },
+  "paidLiveProductTests": "NOT_RUN",
+  "externalAudit": "NOT_RUN",
+  "mainnetAcceptance": false,
+  "productionReady": false
+}
